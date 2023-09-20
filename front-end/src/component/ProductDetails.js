@@ -91,10 +91,11 @@ const ProductDetails = (props) => {
                           alt=""
                           id="main-image"
                           src={location.state.imagelink}
-                          width="250"
+                          width="350"
+                          height="400"
                         />{" "}
                       </div>
-                      <div class="thumbnail text-center">
+                      {/* <div class="thumbnail text-center">
                         {" "}
                         <img
                           onclick="change_image(this)"
@@ -108,7 +109,7 @@ const ProductDetails = (props) => {
                           src={location.state.imagelink}
                           width="70"
                         />{" "}
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -121,13 +122,17 @@ const ProductDetails = (props) => {
                         <i class="fa fa-shopping-cart text-muted"></i>
                       </div>
                       <div class="mt-4 mb-3">
-                        {" "}
-                        <span class="text-uppercase text-muted brand">
-                          District- {location.state.district}
-                        </span>
-                        <h5 class="text-uppercase">
-                          Name- {location.state.name}
-                        </h5>
+                       
+                        <div class="p-1">
+                        <ins><strong>Name-</strong></ins> {location.state.name}
+                        </div>
+                        <div class="p-1">
+                        <ins><strong>District-</strong></ins> {location.state.district}
+                        </div>
+                        <div class="p-1">
+                        <ins><strong>Cultural-</strong></ins> {location.state.culture}
+                        </div>
+
                         <div class="price d-flex flex-row align-items-center">
                           {" "}
                           {/* <span style={{ margin: "4px" }} class="act-price">
@@ -154,8 +159,8 @@ const ProductDetails = (props) => {
                         </div>
                       </div>
                       <p class="about">
-                        {" "}
-                        Discription- {location.state.discription}
+                       
+                      <ins><strong>Description-</strong></ins>{location.state.discription}
                       </p>
                       <div class="sizes mt-5"></div>
                       <div class="cart mt-4 align-items-center">

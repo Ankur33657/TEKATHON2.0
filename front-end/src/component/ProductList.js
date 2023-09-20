@@ -119,7 +119,9 @@ const ProductList = () => {
             <div class="col ">
               <div class="card cardlist1 s1" >
 
-                <img style={{ height: '210px', width: '100%' }} src={item.imagelink} class="card-img-top " alt="..." />
+                <img style={{ height: '210px', width: '100%' }} src={item.imagelink} class="card-img-top " alt="drive image" />
+                {
+                console.log(item.imagelink)}
                 
                 <div class="card-body">
                 <h5 class="card-title">{item.name}</h5>
@@ -127,9 +129,9 @@ const ProductList = () => {
                   {/* <h6><b>{item.category}</b></h6> */}
                   {/* <h6><b>{item.company}</b></h6> */}
     
-                  <h4 class="mb-1 me-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                  {/* <h4 class="mb-1 me-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
   <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
-</svg>{item.price}</h4>
+</svg>{item.price}</h4> */}
                   {/* <p class="card-text">{item.discription}</p> */}
                   <button class="btn btn-primary btn-sm butt1" type="button"><Link style={{ color: "Black", textDecoration: "none" }} to="/detail" state={{
                     id: item._id,
