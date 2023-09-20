@@ -18,16 +18,22 @@ const Nav = () => {
         <div  className='Navbar' >
         <ul  className="nav justify-content-center " >
   <li className="nav-item">
-    <a className="nav-link active" aria-current="page"> <Link to="/">Product</Link></a>
+    <a className="nav-link active" aria-current="page"> <Link to="/">Home</Link></a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link" >Workshop</a>
   </li>
   <li className="nav-item">
     <a className="nav-link" ><Link to="/add">Add Product</Link></a>
   </li>
   <li className="nav-item">
-    <a className="nav-link" ><Link to="/update">Popular Product</Link></a>
+    <a className="nav-link" ><Link to="/add">Experts</Link></a>
   </li>
+  {/* <li className="nav-item">
+    <a className="nav-link" ><Link to="/update">Popular Product</Link></a>
+  </li> */}
   <li className="nav-item">
-    <a className="nav-link" ><Link to="/profile">Creater</Link></a>
+    <a className="nav-link" ><Link to="/profile">Creator</Link></a>
   </li>
   <li className="nav-item">
     <a className="nav-link" ><Link onClick={logout} to="/signup">Logout</Link></a>

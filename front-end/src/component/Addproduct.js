@@ -4,18 +4,16 @@ import Footer from './Footer';
 import ProductList from './ProductList';
 const Addproduct=()=>{
     const [name,setName]=React.useState("");
-    const [price,setPrice]=React.useState("");
-    const [category,setCategory]=React.useState("");
-    const [company,setCompany]=React.useState("");
+    const [district,setDistrict]=React.useState("");
+    const [culture,setCulture]=React.useState("");
     const [imagelink,setImageLink]=React.useState("");
     const [discription,setDiscription]=React.useState("");
     const userId=JSON.parse(localStorage.getItem('user'))._id;
     const formData = {
         name: name,
-        price: price,
-        category:category,
+        district: district,
         userId:userId,
-        company: company,
+        culture: culture,
         imagelink:imagelink,
         discription: discription,
         popular:false,
@@ -34,9 +32,8 @@ const Addproduct=()=>{
         result=await result.json();
         console.log(result);
         setName("")
-        setPrice("")
-        setCategory("")
-        setCompany("")
+        setDistrict("")
+        setCulture("")
         setImageLink("")
         setDiscription("")
         
@@ -75,26 +72,26 @@ const Addproduct=()=>{
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="form_lastname">Price</label>
+                            <label for="form_lastname">District</label>
                             <input id="form_lastname" type="text"  class="form-control"  required="required" data-error="Lastname is required."
-                            value={price}  onChange={(e)=>{setPrice(e.target.value)}}/>
+                            value={district}  onChange={(e)=>{setDistrict(e.target.value)}}/>
                                                             </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="form_email">Category</label>
+                            <label for="form_email">Culture</label>
                             <input id="form_email" type="email" name="email" class="form-control"  required="required" data-error="Valid email is required."
-                            value={category}  onChange={(e)=>{setCategory(e.target.value)}}/>
+                            value={culture}  onChange={(e)=>{setCulture(e.target.value)}}/>
                             
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="form_need">Company</label>
+                            <label for="form_need">Image link</label>
                             <input id="form_email" type="email" name="email" class="form-control"  required="required" data-error="Valid email is required."
-                            value={company}  onChange={(e)=>{setCompany(e.target.value)}}/>
+                            value={imagelink}  onChange={(e)=>{setImageLink(e.target.value)}}/>
                             
                     
                           
@@ -102,23 +99,21 @@ const Addproduct=()=>{
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="col">
+                   
+                    <div class="col-md-12" >
                         <div class="form-group">
-                            <label for="form_name">Image Link</label>
-                            <input id="form_name"  type="text" name="name" class="form-control" required="required" data-error="Firstname is required."
-                             value={imagelink}  onChange={(e)=>{setImageLink(e.target.value)}}/>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_lastname">Discription</label>
+                            <label for="form_lastname" style={{height:"50px"}}>Discription</label>
                             <input id="form_lastname"  type="text"  class="form-control"  required="required" data-error="Lastname is required."
                             value={discription}  onChange={(e)=>{setDiscription(e.target.value)}}/>
                                                             </div>
                     </div>
                 </div>
+                {/* <div class="form-outline w-100">
+                <textarea class="form-control" id="textAreaExample" rows="4"
+                  style="background: #fff;"  value={discription}  onChange={(e)=>{setDiscription(e.target.value)}}></textarea>
+                <label class="form-label" for="textAreaExample">Discriptions</label>
+              </div> */}
                 {/* <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">

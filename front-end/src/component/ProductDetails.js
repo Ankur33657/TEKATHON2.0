@@ -123,14 +123,14 @@ const ProductDetails = (props) => {
                       <div class="mt-4 mb-3">
                         {" "}
                         <span class="text-uppercase text-muted brand">
-                          Brand- {location.state.company}
+                          District- {location.state.district}
                         </span>
                         <h5 class="text-uppercase">
                           Name- {location.state.name}
                         </h5>
                         <div class="price d-flex flex-row align-items-center">
                           {" "}
-                          <span style={{ margin: "4px" }} class="act-price">
+                          {/* <span style={{ margin: "4px" }} class="act-price">
                             price-{" "}
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +143,7 @@ const ProductDetails = (props) => {
                               <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z" />
                             </svg>
                             {location.state.price}
-                          </span>
+                          </span> */}
                           {/* <div class="ml-2">
                             {" "}
                             <small class="dis-price">
@@ -161,14 +161,14 @@ const ProductDetails = (props) => {
                       <div class="cart mt-4 align-items-center">
                         {" "}
                         {/* <img src={clothsize} alt="Chart Image"/> */}
-                        <button class="btn btn-danger text-uppercase mr-2 px-4">
+                        {/* <button class="btn btn-danger text-uppercase mr-2 px-4">
                           <Link
                             style={{ textDecoration: "None", color: "black" }}
                             to="/buynow"
                           >
                             Buy Now
                           </Link>
-                        </button>{" "}
+                        </button>{" "} */}
                         <i class="fa fa-heart text-muted"></i>{" "}
                         <i class="fa fa-share-alt text-muted"></i>{" "}
                       </div>
