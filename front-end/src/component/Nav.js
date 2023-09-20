@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link,useNavigate } from 'react-router-dom';
+import satyamev from '../image/satyamev.jpg';
 
 import '../App.css'
 
@@ -11,7 +12,7 @@ const Nav = () => {
     navigate('/signup');
   }
     return (
-      <div className='navbar-container' style={{ position: 'sticky', top: 0 ,zIndex:6}}>
+      <div className='navbar-container' style={{backgroundColor:'white', position: 'sticky', top: 0 ,zIndex:6}}>
        
         {auth?
         <div  className='Navbar' >
@@ -26,7 +27,7 @@ const Nav = () => {
     <a className="nav-link" ><Link to="/update">Popular Product</Link></a>
   </li>
   <li className="nav-item">
-    <a className="nav-link" ><Link to="/profile">Creator</Link></a>
+    <a className="nav-link" ><Link to="/profile">{satyamev}</Link></a>
   </li>
   <li className="nav-item">
     <a className="nav-link" ><Link onClick={logout} to="/signup">Logout</Link></a>
