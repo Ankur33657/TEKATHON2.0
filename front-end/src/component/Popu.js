@@ -34,7 +34,7 @@ const Popu=()=>{
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
    
   </div>
-  <div class="carousel-inner ">
+  <div class="carousel-inner " style={{padding:'50px'}}>
     <div class="carousel-item active" data-bs-interval="5000">
       <img src={odop} class="d-block w-100 carousel-img" alt="..."/>
       <div class="carousel-caption d-none d-md-block">

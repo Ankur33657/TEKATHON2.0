@@ -14,7 +14,7 @@ const ProductList = () => {
   // }
 
   const [products, setProducts] = useState([]);
-  const Style = { padding: "10px"};
+  const Style = { margin:"20px",width:"1050px"};
   
   useEffect(() => {
     getProducts();
