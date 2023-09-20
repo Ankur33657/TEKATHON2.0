@@ -8,7 +8,7 @@ import Addproduct  from './component/Addproduct';
 import ProductList from './component/ProductList';
 import ProductDetails from './component/ProductDetails';
 import Profile from './component/Profile';
-import Buy from './component/Buy';
+
 import Popu from './component/Popu';
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/detail" element={<ProductDetails/>}/>
-      <Route path="/buynow" element={<Buy/>}/>
+      {/* <Route path="/buynow" element={<Buy/>}/> */}
       {/* <Route path="/sidebar" element={<Sidebar/>}/> */}
    </Routes>
      

@@ -119,7 +119,8 @@ body{background-color: #96f2d7;}
   /* Buy now css */
   body{
 
-    background-image:url("./image/wall1.jpg");
+    /* background-image:url("./image/wall1.jpg"); */
+    background-color: #F0F0F0;
     background-position: center; 
     background-size: cover;
     /* #fff4e6 */
