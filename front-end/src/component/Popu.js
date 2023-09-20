@@ -35,26 +35,23 @@ const Popu=()=>{
    
   </div>
   <div class="carousel-inner ">
-    <div class="carousel-item active" data-bs-interval="1000">
+    <div class="carousel-item active" data-bs-interval="5000">
       <img src={odop} class="d-block w-100 carousel-img" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h3 class="slide1 " >BEST OF ANKAPRIN EXCLUSIVE BRANDS</h3>
-        <p class="slide1 ">JUST LAUNCHED SUMMER DEAL GRAB AT DISCOUNT 25%</p>
+
       </div>
     </div>
    
-    <div class="carousel-item" data-bs-interval="1000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src={odop2} class="d-block w-100 carousel-img" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5 class="slide1">BEST OF ANKAPRIN EXCLUSIVE BRANDS</h5>
-        <p class="slide1">FLAT 40% OFF</p>
+        
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="1000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src={odop} class="d-block w-100 carousel-img" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-        <h5 class="slide1">BEST OF ANKAPRIN EXCLUSIVE BRANDS</h5>
-        <p class="slide1">NIKE SHOE AT FLAT 50% OFF</p>
+        
       </div>
     </div>
   </div>
