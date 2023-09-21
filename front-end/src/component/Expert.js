@@ -3,7 +3,7 @@ import Back from "../image/Back.jpg"
 const Expert=()=>{
 return<>
 <div>
-          <img style={{width:"100%",height:"70%"}} src={Back} alt="..." />
+          <img style={{width:"99%",height:"71%"}} src={Back} alt="..." />
         </div>
 </>
 
