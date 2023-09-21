@@ -11,6 +11,7 @@ import Profile from './component/Profile';
 import Workshop from './component/Workshop';
 
 import Popu from './component/Popu';
+import Expert from './component/Expert';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
      <Route path="/workshop" element={<Workshop/>}/>
      </Route>
       <Route path="/signup" element={<Signup/>}/>
+      <Route path="/expert" element={<Expert/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/detail" element={<ProductDetails/>}/>
       {/* <Route path="/buynow" element={<Buy/>}/> */}
