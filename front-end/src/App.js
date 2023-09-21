@@ -8,6 +8,7 @@ import Addproduct  from './component/Addproduct';
 import ProductList from './component/ProductList';
 import ProductDetails from './component/ProductDetails';
 import Profile from './component/Profile';
+import Workshop from './component/Workshop';
 
 import Popu from './component/Popu';
 
@@ -24,6 +25,7 @@ function App() {
      <Route path="/update" element={<Popu/>}/>
      <Route path="/logout" element={<h1>Logout page</h1>}/>
      <Route path="/profile" element={<Profile/>}/>
+     <Route path="/workshop" element={<Workshop/>}/>
      </Route>
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/login" element={<Login/>}/>

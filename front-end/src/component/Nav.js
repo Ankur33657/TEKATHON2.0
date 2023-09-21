@@ -21,7 +21,7 @@ const Nav = () => {
     <a className="nav-link active" aria-current="page"> <Link to="/">Home</Link></a>
   </li>
   <li className="nav-item">
-    <a className="nav-link" >Workshop</a>
+    <a className="nav-link" ><Link to="/workshop">Workshop</Link></a>
   </li>
   <li className="nav-item">
     <a className="nav-link" ><Link to="/add">Add Product</Link></a>
