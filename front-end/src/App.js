@@ -10,6 +10,7 @@ import ProductDetails from './component/ProductDetails';
 import Profile from './component/Profile';
 
 import Popu from './component/Popu';
+import Expert from './component/Expert';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
      <Route path="/profile" element={<Profile/>}/>
      </Route>
       <Route path="/signup" element={<Signup/>}/>
+      <Route path="/expert" element={<Expert/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/detail" element={<ProductDetails/>}/>
       {/* <Route path="/buynow" element={<Buy/>}/> */}
